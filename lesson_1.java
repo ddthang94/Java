@@ -7,5 +7,8 @@ public class lesson_1 {
         System.out.println(" 456");
         /* Ctrl+Shift+/ -> Note */
         /* Ctrl+D -> copy line */
+        /* Alt+Shift+Up or Down -> navigate a line or paragraph up or down */
+        /* psvm generate the main class */
+        /* sout generate println func */
     }
 }
