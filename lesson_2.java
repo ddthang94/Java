@@ -14,7 +14,21 @@ public class lesson_2 {
         System.out.println("Float: 32bit from " + Float.MIN_VALUE + " to " + Float.MAX_VALUE);
         System.out.println("Double: 64bit from " + Double.MIN_VALUE + " to " + Double.MAX_VALUE);
         System.out.println("\n============Variable declaration=============");
+        /* type of variable name*variable */
+        int a;
+        byte age;
+        float grade;
+        /* variables declaration */
+        int b, c;
         System.out.println("\n============Variable initialization=============");
-        /* https://ioflood.com/blog/primitive-data-types-in-java/#:~:text=Java%20has%20eight%20primitive%20data,of%20values%20it%20can%20represent.&text=In%20this%20example%2C%20we've,Java's%20eight%20primitive%20data%20types. */
+        /* type of variable name*variable = value */
+        int myAge = 30;
+        System.out.println(myAge);
+        float grade_2 = 4.5f;
+        double grade_3 = 5.0;
+        myAge = 31;
+        System.out.println(myAge);
+        /* final : do not allow to modify the variable */
+        final int year = 1994;
     }
 }
