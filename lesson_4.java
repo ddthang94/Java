@@ -1,6 +1,6 @@
 public class lesson_4 {
     public static void main(String[] args) {
-        /* Operations in Java */
+        /* Arithmetic operators in Java */
         int a = 11;
         int b = 5;
         System.out.println("a = " + a);
@@ -18,8 +18,14 @@ public class lesson_4 {
         /* Division */
         double div = (double) a/b;
         System.out.println("Division a / b = " + div);
-        /* Remain */
+        /* Modulus */
         int remain = a%b;
         System.out.println("Remain = " + remain);
+        int c = 5;
+        System.out.println("c = 5");
+        ++c;
+        System.out.println("Increment ++c >> " + c);
+        --c;
+        System.out.println("Decrement --c >> " + c);
     }
 }
