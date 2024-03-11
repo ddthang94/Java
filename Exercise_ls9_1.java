@@ -7,7 +7,7 @@ public class Exercise_ls9_1 {
         double h = sc.nextDouble();
         System.out.println("Enter your weight in kilograms: ");
         int w = sc.nextInt();
-        double BMI = (double) w/Math.pow(h,2);
+        double BMI = (double) w/(Math.pow(h,2));
         System.out.println("Your BMI is " + BMI);
         /* If Else condition */
         if (BMI < 15) {
