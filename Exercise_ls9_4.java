@@ -19,8 +19,8 @@ public class Exercise_ls9_4 {
             n1 = n2 = (-b/(2*a));
             System.out.println("The equation has double solution which is n1 = n2 = "+n1);
         } else if (D>0){
-            n1 = (-b+Math.sqrt(D))/2*a;
-            n2 = (-b-Math.sqrt(D))/2*a;
+            n1 = (-b+Math.sqrt(D))/(2*a);
+            n2 = (-b-Math.sqrt(D))/(2*a);
             System.out.println("The equation has 2 different solutions n1 = "+n1 + " and n2 = "+n2);
         }
     }
