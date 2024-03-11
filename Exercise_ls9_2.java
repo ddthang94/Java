@@ -10,7 +10,7 @@ public class Exercise_ls9_2 {
         int year = sc.nextInt();
         System.out.println("The year is "+ year);
 
-        if ((year%4 == 0) && (year%100!=0)) {
+        if ((year%4==0) && (year%100!=0)) {
             System.out.println("The year is a leap year!");
         } else {
             System.out.println("The year is a non-leap year!");
