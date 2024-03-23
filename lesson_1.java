@@ -10,5 +10,6 @@ public class lesson_1 {
         /* Alt+Shift+Up or Down -> navigate a line or paragraph up or down */
         /* psvm generate the main class */
         /* sout generate println func */
+        /* Shift+F6 : rename multiple variables name */
     }
 }
