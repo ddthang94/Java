@@ -102,5 +102,53 @@ public class lesson_25 {
         /* Insert */
         sb.insert(2," raining ");
         System.out.println(sb);
+        /* Append */
+        StringBuilder sb1 = new StringBuilder("1234");
+        System.out.println(sb1);
+        sb1.append(" 56789");
+        System.out.println(sb1);
+        /* Delete from..to.. */
+        StringBuilder sb2 = new StringBuilder("0123456789");
+        System.out.println(sb2);
+        sb2.delete(1,3);
+        System.out.println(sb2);
+        /* reverse() */
+        StringBuilder sb3 = new StringBuilder("123456789");
+        System.out.println(sb3);
+        sb3.reverse();
+        System.out.println(sb3);
+        System.out.println("=======");
+        /* cannot reverse this string below, so we need to create obj using StringBuilder */
+        String str27 = "123456789abc";
+        System.out.println(str27);
+        StringBuilder sb4 = new StringBuilder(str27);
+        sb4.reverse();
+        System.out.println(sb4);
+        System.out.println("=======");
+
+        /* split */
+        String sp = "Hello world!";
+        String[] arr = sp.split(" ");
+        for (int i=0;i<arr.length;i++) {
+            System.out.println(arr[i]);
+        }
+        System.out.println("=======");
+
+        /* lowercase() and uppercase() */
+        String str23 = "I am WINNER!";
+        System.out.println(str23);
+        String str24 = str23.toLowerCase();
+        System.out.println("To lower case: "+str24);
+        String str25 = str24.toUpperCase();
+        System.out.println("To upper case: "+str25);
+        System.out.println("=======");
+
+        /* toCharArray() - check password */
+        String str26 = "@agas12345678";
+        char[] arr1 = str26.toCharArray();
+        for (int i=0;i<arr1.length;i++){
+            System.out.print(arr1[i]+" ");
+        }
+        System.out.println("\n=======");
     }
 }
