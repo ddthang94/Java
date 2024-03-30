@@ -27,4 +27,22 @@ public class Student {
     public void displayInformation() {
         System.out.println(fullName+" : "+grade);
     }
+
+    /* get&set */
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public double getGrade() {
+        return grade;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setGrade(double grade) {
+        this.grade = grade;
+    }
 }
