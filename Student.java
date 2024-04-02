@@ -4,7 +4,7 @@ public class Student {
     set private if we don't want to inherit
     set protected if we do want to inherit
     should not set public */
-    /* here: global variable */
+    /* here: global variable (instance variable) */
     private String fullName;
     private double grade;
 
