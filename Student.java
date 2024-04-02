@@ -72,4 +72,19 @@ public class Student {
             System.out.println("You are not passed");
         }
     }
+
+    /* Overloading method: the method has the same name but has different signature (parameter) */
+    /* Signature: the number of signature, datatype, index of signature */
+    public double calAverage(double math, double english, double history) {
+        return (math+english+history)/3;
+    }
+
+    /* Parameter list method */
+    public double sumOfGrade(double ... arr) {
+        double sum = 0.0;
+        for (double x : arr){
+            sum+=x;
+        }
+        return sum;
+    }
 }

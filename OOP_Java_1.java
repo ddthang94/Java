@@ -47,5 +47,17 @@ public class OOP_Java_1 {
 
         /* test service method */
         std3.checkIfValid();
+
+        /* test overloading method */
+        double test1 = std3.calAverage(5,6);
+        System.out.println(test1);
+        double test2 = std3.calAverage(5,6,7);
+        System.out.println(test2);
+
+        /* test parameter list method */
+        double result = std3.sumOfGrade(8.0,7.0,6.0,9.0);
+        System.out.println(result);
+        double result2 = std3.sumOfGrade(8.0,7.0,6.0,9.0, 10.0, 8.6);
+        System.out.println(result2);
     }
 }
