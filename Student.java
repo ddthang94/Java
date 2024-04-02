@@ -8,6 +8,20 @@ public class Student {
     private String fullName;
     private double grade;
 
+    /* get&set */
+    public String getFullName() {
+        return fullName;
+    }
+    public double getGrade() {
+        return grade;
+    }
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+    public void setGrade(double grade) {
+        this.grade = grade;
+    }
+
     /* Constructor - has no parameter */
 //  Alt+ins > auto generating
     /* Constructor type: default */
@@ -24,25 +38,38 @@ public class Student {
     }
 
     /* Methods (functions) */
+    /* has NO return */
     public void displayInformation() {
         System.out.println(fullName+" : "+grade);
     }
+    /* has return */
+    public double calAverage(double math, double english) {
+        return (math+english)/2;
+    }
+    /* special method toString */
 
-    /* get&set */
-
-    public String getFullName() {
-        return fullName;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "fullName='" + fullName + '\'' +
+                ", grade=" + grade +
+                '}';
     }
 
-    public double getGrade() {
-        return grade;
+    /* Support method and Service method
+    * (public) In a class, we can have more than one method, the method can be used in public
+    * that is called Service method.
+    * (private) The methods are used in side class only that is called Support method */
+    /* Support */
+    private boolean checkGrade() {
+        return this.grade>=8;
     }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public void setGrade(double grade) {
-        this.grade = grade;
+    /* Service */
+    public void checkIfValid() {
+        if (checkGrade()) {
+            System.out.println("You are passed");
+        } else {
+            System.out.println("You are not passed");
+        }
     }
 }

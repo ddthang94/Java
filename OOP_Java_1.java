@@ -36,5 +36,16 @@ public class OOP_Java_1 {
         std3.setFullName("ThangD");
         std3.setGrade(9.5);
         std3.displayInformation();
+
+        /* Methods
+        * type: has return and has NO return */
+        double gradeAvg = std3.calAverage(8.0,9.0);
+        System.out.println(gradeAvg);
+
+        /* test toString method */
+        System.out.println(std3);
+
+        /* test service method */
+        std3.checkIfValid();
     }
 }
