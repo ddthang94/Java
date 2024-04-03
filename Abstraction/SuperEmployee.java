@@ -1,4 +1,4 @@
-package Company;
+package Abstraction;
 
 public class SuperEmployee extends Employee {
     protected int night;

@@ -1,4 +1,4 @@
-package Company;
+package Abstraction;
 
 public class ExcellentEmployee extends Employee {
     public ExcellentEmployee(String name, String nationality, int id) {

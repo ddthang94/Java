@@ -1,4 +1,4 @@
-package Company;
+package Abstraction;
 
 public abstract class Employee {
     protected String name;
