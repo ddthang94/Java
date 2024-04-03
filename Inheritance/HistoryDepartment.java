@@ -1,4 +1,4 @@
-package ManageGrade;
+package Inheritance;
 
 public class HistoryDepartment extends Year2023 {
     public HistoryDepartment(String name, int id) {

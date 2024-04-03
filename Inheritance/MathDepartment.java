@@ -1,4 +1,4 @@
-package ManageGrade;
+package Inheritance;
 
 public class MathDepartment extends Year2023 {
     public MathDepartment(String name, int id) {

@@ -1,4 +1,4 @@
-package ManageGrade;
+package Inheritance;
 
 public class Year2023 {
     protected String name;
