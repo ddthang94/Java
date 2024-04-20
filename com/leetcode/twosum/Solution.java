@@ -19,6 +19,8 @@ package com.leetcode.twosum;
 //Input: nums = [3,3], target = 6
 //Output: [0,1]
 
+import java.util.HashMap;
+
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         for (int i=0; i<nums.length; i++) {
@@ -27,6 +29,20 @@ public class Solution {
                     return new int[]{i,j};
                 }
             }
+        }
+        return nums;
+    }
+
+    /* Hashmap */
+//    K -> V
+    public int[] twoSum2(int[] nums, int target) {
+        HashMap<Integer, Integer> complements = new HashMap<>();
+        for (int i=0; i<nums.length; i++) {
+            Integer complementIndex = complements.get(nums[i]);
+            if (complementIndex != null) {
+                return new int[]{i,complementIndex};
+            }
+            complements.put(target-nums[i], i);
         }
         return nums;
     }
